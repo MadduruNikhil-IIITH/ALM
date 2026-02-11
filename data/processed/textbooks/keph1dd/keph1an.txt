@@ -1,0 +1,292 @@
+--- Page 1 ---
+160 PHYSICS
+Chapter   1
+1.1 (a) 10–6 ;  (b) 1.5 × 104 ; (c) 5 ; (d) 11.3, 1.13 × 104.
+1.2 (a) 107 ;   (b) 10–16  ; (c) 3.9 × 104 ; (d) 6.67 × 10–8.
+1.5 500
+1.6 (c)
+1.7 0.035 mm
+1.9 94.1
+1.10 (a) 1 ; (b) 3 ; (c) 4 ; (d) 4 ; (e) 4 ; (f) 4.
+1.11 8.72 m2; 0.0855 m3
+1.12 (a) 2.3 kg ; (b) 0.02 g
+1.13 The correct formula is m = m0 (1 – v2/c2)–½
+1.14≅ 3 × 10–7 m3
+1.15≅  104; intermolecular separation in a gas is much larger than the size of a molecule.
+1.16 Near objects make gr eater angle than distant (far of f) objects at the eye of the observer .
+When you are moving, the angular change is less for distant objects than nearer objects.
+So, these distant objects seem to move along with you, but the nearer objects in opposite
+direction.
+1.17 1.4 × 103 kg m-3; the mass density of the Sun is in the range of densities of liquids /
+solids and not gases. This high density arises due to inward gravitational attraction
+on outer layers due to inner layers of the Sun.
+Chapter  2
+2.1  (a), (b)
+2.2 (a) A....B, (b) A ....B, (c) B ....A, (d) Same, (e) B ....A....once.
+2.4 37 s
+2.5 3.06 m s–2 ; 11.4 s ANSWERS
+Reprint 2025-26
+
+
+--- Page 2 ---
+ANSWERS 161
+2.6 (a) Vertically downwar ds; (b) zer o velocity, acceleration of 9.8 m s-2 downwar ds;
+(c) x > 0 (upward and downward motion); v < 0 (upward), v > 0 (downward), a > 0
+throughout; (d) 44.1 m, 6 s.
+2.7 (a) True;, (b) False; (c) True (if the particle rebounds instantly with the same speed, it
+implies infinite acceleration which is unphysical); (d) False (true only when the chosen
+positive direction is along the direction of motion)
+2.10 (a) 5 km h–1, 5 km h–1; (b) 0, 6 km h–1;  (c)  15
+8 km h–1, 45
+8 km h–1
+2.11 Because, for an arbitrarily small interval of time, the magnitude of displacement is equal
+to the length of the path.
+2.12 All the four graphs are impossible. (a) a particle cannot have two different positions at
+the same time;  (b) a particle cannot have velocity in opposite directions at the same
+time;  (c) speed is  always non-negative;  (d) total path length of a particle can never
+decrease with time. (Note, the  arrows on  the graphs are meaningless).
+2.13 No, wrong. x-t plot does not show the trajectory of a particle. Context: A body is dropped
+from a tower ( x = 0) at  t = 0.
+2.14 105 m s-1
+2.15 (a)  A ball at rest on a smooth floor is kicked, it rebounds from a wall with reduced speed
+and moves to the opposite wall which stops it; (b) A ball thrown up with some initial
+velocity rebounding from the floor with reduced speed after each hit; (c) A uniformly
+moving cricket ball turned back by hitting it with a bat for a very short time-interval.
+2.16 x < 0, v < 0, a  > 0;  x > 0, v > 0, 
+a < 0;  x < 0, v  > 0, a  > 0.
+2.17 Greatest in 3, least in 2;  v > 0 in 1 and 2, v < 0 in 3.
+2.18 Acceleration magnitude greatest in 2; speed greatest in 3;  v > 0 in 1, 2 and 3; a > 0 in 1
+and 3, a  < 0 in 2; a  = 0 at A, B, C, D.
+Chapter   3
+3.1 Volume, mass, speed, density, number of moles, angular fr equency are scalars; the r est
+are vectors.
+3.2 Work, curr ent
+3.3 Impulse
+3.4 Only (c) and (d) are permissible
+3.5 (a) T, (b) F , (c) F , (d) T , (e) T
+3.6 Hint: The sum (difference) of any two sides of a triangle is never less (greater) than the
+third side. Equality holds for collinear vectors.
+3.7 All statements except (a) are correct
+3.8 400 m for each; B
+3.9 (a) O;  (b) O;  (c) 21.4 km h–1
+3.10 Displacement of magnitude 1 km and direction 60o with the initial direction; total path
+length = 1.5 km (third turn); null displacement vector; path length = 3 km (sixth turn);
+866 m, 30o, 4 km (eighth turn)
+Reprint 2025-26
+
+
+--- Page 3 ---
+162 PHYSICS
+3.11 (a) 49.3 km h–1 ; (b) 21.4 km h–1. No, the average speed equals average velocity magnitude
+only for a straight path.
+3.12 150.5 m
+3.13 50 m
+3.14 9.9 m s-2, along the radius at every point towards the centre.
+3.15 6.4 g
+3.16 (a) False (true only for uniform circular motion)
+(b) True, (c) True.
+3.17 (a) v i j( ) ( .ɵɵ) t t= −3 0 4.0  ɵ( )ɵa jt= −4.0
+(b) 8.54 m s–1,  70° with x-axis.
+3.18 (a) 2 s, 24 m, 21.26 m s–1
+3.19 2, 45o with the x-axis;  2, – 45o  with the x - axis,  ( ) 5 2 1 2/ , /− .
+3.20 (b) and (e)
+3.21 Only (e) is true
+3.22 182 m s–1
+Chapter    4
+4.1 (a) to (d)  No net force according to the First Law
+(e)  No force, since it is far away  from all material agencies producing electromagnetic
+and gravitational forces.
+4.2 The only force in each case is the force of gravity, (neglecting effects of air) equal to
+0.5 N vertically downward. The answers do not change, even if the motion of the pebble
+is not along the vertical. The pebble is not at rest at the highest point. It has a constant
+horizontal component of velocity throughout its motion.
+4.3 (a) 1 N vertically downwards (b)  same as in (a)
+(c) same as in (a);  force at an instant depends on the situation at that instant, not
+on history.
+(d)  0.1 N in the direction of motion of the train.
+4.4 (i) T
+4.5 a = – 2.5 m s–2.  Using v  = u + at,  0 = 15 – 2.5  ti.e.,    
+t = 6.0 s
+4.6 a = 1.5/25  =  0.06 m s–2
+F =  3 × 0.06  =  0.18 N in the direction of motion.
+4.7 Resultant force = 10 N at an angle of tan–1 (3/4) = 37° with the direction of 8 N force.
+Acceleration = 2 m s–2 in the direction of the resultant force.
+4.8 a = – 2.5 m s–2 , Retarding force = 465 × 2.5 = 1.2 × 103  N
+4.9 F – 20,000 × 10 = 20000 × 5.0,     i.e.,   F = 3.0  × 105  N
+4.10 a = – 20 m s–20  ≤  t  ≤  30 s
+t = –5 s : x = u t = – 10 × 5 = –50 m
+Reprint 2025-26
+
+
+--- Page 4 ---
+ANSWERS 163
+t = 25 s : x  =  u t + (½)  a t2  =  (10 × 25 – 10 × 625)m  =  – 6 km
+t = 100 s : First consider motion up to 30 s
+x1 = 10 × 30 – 10 × 900 =  – 8700 m
+At  t = 30 s,   v = 10 – 20 × 30 = –590 m s-1
+For  motion from 30 s to 100 s : x2 = – 590 × 70 = – 41300 m
+x = x1 + x2 = – 50 km
+4.11 (a)  Velocity of car ( at t = 10 s ) = 0 + 2 × 10 = 20 m s–1
+By the First Law, the horizontal component of velocity is 20 m s–1 throughout.
+Vertical component of velocity (at  t = 11s) =  0 + 10 × 1  =  10 m s–1
+Velocity of stone (at t = 11s) = 20 10 500 2242 2+= =.–1  ms at an angle of tan–1 ( ½) with
+the horizontal.
+(b)10 m s-2 vertically downwards.
+4.12 (a) At the extreme position, the speed of the bob is zero. If the string is cut, it  will fall
+vertically downwards.
+(b) At the mean position, the bob has a horizontal velocity. If the string is cut, it will fall
+along a parabolic path.
+4.13 The reading on the scale is a measure of the force on the floor by the man.  By the Third
+Law, this is equal and opposite to the nor mal for ce N on the man by the floor .
+(a)N = 70 × 10 = 700 N ; Reading is 70 kg
+(b)70 × 10 – N
+ = 70 × 5 ; Reading is 35 kg
+(c)N – 70 × 10 = 70 × 5 ; Reading is 105 kg
+(d) 70 × 10 – N = 70 × 10; Reading would be zero; the scale would read zero.
+4.14 (a) In all the three intervals, acceleration and, therefore, force are zero.
+(b) 3 kg m s–1 at  t = 0  ; (c) –3 kg m s–1  at  t = 4 s.
+4.15 If the 20 kg mass is pulled,
+600 – T = 20 a,T = 10 a
+a = 20 m s–2, T = 200 N
+If the 10 kg mass is pulled, a = 20 m s–2,T = 400 N
+4.16 T – 8 × 10 = 8 a, 12 × 10 – T = 12a
+i.e. a = 2 m s–2,  T  =  96 N
+4.17 By momentum conservation principle, total final momentum is zero.  Two momentum
+vectors cannot sum to a null momentum unless they are equal and opposite.
+4.18 Impulse on each ball = 0.05 ×12 = 0.6 kg m s-1 in magnitude.  The two impulses are
+opposite in direction.
+4.19 Use momentum conservation :  100 v = 0.02 ×  80
+v = 0.016 m s–1 = 1.6 cm s–1
+4.20 Impulse is directed along the bisector of the initial and final directions.  Its magnitude is
+0.15  ×  2  ×  15 ×  cos 22.5° = 4.2  kg m s–1
+4.21–1 402 1.5 2 m s60vπ π = × × =
+2 20.25 46.6 N1.5mvTRπ×= = =
+2
+–1200 ,which gives 35 m smax
+maxmvvR= =
+Reprint 2025-26
+
+
+--- Page 5 ---
+164 PHYSICS
+4.22 Alternative (b) is correct, according to the First Law
+4.23 (a) The horse-cart system has no external force in empty space. The mutual forces
+between  the horse and the cart cancel  (Third Law).  On the ground, the contact force
+between the system and the ground (friction) causes their motion from rest.
+(b) Due to inertia of the body not directly in contact with the seat.
+(c) A lawn mower is pulled or pushed by applying force at an angle. When you push, the
+normal force ( N) must be more than its weight, for equilibrium in the vertical direction.
+This results in greater friction f ( f ∝ N
+) and, therefore, a greater applied force to move.
+Just the opposite happens while pulling.
+(d) To reduce the rate of change of momentum and hence to reduce the force necessary
+to stop the ball.
+Chapter    5
+5.1 (a) +ve (b) –ve (c) –ve (d) + ve              (e) – ve
+5.2 (a) 882 J ;  (b) –247 J;  (c) 635 J ;   (d) 635 J;
+Work done by the net for ce on a body equals change in its kinetic ener gy.
+5.3 (a)    x >  a ; 0 (c)  x < a,  x > b ; - V1
+(b)  −∞ < x  < ∞; V1(d) - b/2  <  x  < - a / 2,   a / 2 <  x  <  b / 2;  - V1
+5.5 (a) rocket; (b) For a conservative force work done over a path is minus of change in
+potential energy. Over a complete orbit, there is no change in potential energy;  (c) K.E.
+increases, but P .E. decr eases, and the sum decr eases due to dissipation against friction;
+(d) in the second case.
+5.6 (a) decrease;  (b) kinetic energy; (c) external force; (d) total linear momentum, and also
+total energy (if the system of two bodies is isolated).
+5.7 (a) F ;  (b) F ;  (c) F ;  (d) F (true usually but not always, why?)
+5.8 (a)No
+(b)Yes
+(c)Linear momentum is conserved during an inelastic collision, kinetic energy is, of
+course, not conserved even after the collision is over .
+(d)elastic.
+5.9 (b)t
+5.10 (c) t3/2
+5.11 12 J
+5.12 The electr on is faster ,  ve / vp  = 13.5
+5.13 0.082 J in each half ;   – 0.163 J
+5.14 Yes, momentum of the molecule + wall system is conserved.  The wall has a r ecoil
+momentum such that the momentum of the wall + momentum of the outgoing molecule
+equals momentum of the incoming molecule, assuming the wall to be stationary initially.
+However , the r ecoil momentum pr oduces negligible velocity because of the lar ge mass of
+the wall.  Since kinetic energy is also conserved, the collision is elastic.
+5.15 43.6 kW
+5.16 (b)
+5.17 It transfers its entire momentum to the ball on the table, and does not rise at all.
+5.18 5.3 m s-1
+Reprint 2025-26
+
+
+--- Page 6 ---
+ANSWERS 165
+5.19 27 km h–1 (no change in speed)
+5.20 50 J
+5.21 (a) m Avtρ= (b) 3/2 K Av tρ=    (c) P =  4.5 kW
+5.22 (a) 49,000 J (b) 6.45 10-3 kg
+5.23 (a) 200 m2(b) comparable to the roof of a large house of dimension 14m × 14m.
+Chapter     6
+6.1 The geometrical centre of each. No, the CM may lie outside the body, as in case of a
+ring, a hollow spher e, a  hollow cylinder , a hollow cube etc.
+6.2 Located on the line joining H and C1 nuclei at a distance of 1.24  Å from the H end.
+6.3 The speed of the CM of the (trolley + child) system remains unchanged (equal to v)
+because no external force acts on the system.  The forces involved in running on the
+trolley are internal to this system.
+6.6 lz = xpy – ypx, lx = ypz – zpy, ly = zpx – xpz
+6.8 72 cm
+6.9 3675 N  on each front wheel, 5145 N on each back wheel.
+6.10 Sphere
+6.11 Kinetic Energy = 3125 J; Angular Momentum = 62.5 J s
+6.12 (a)  100 rev/min (use angular momentum conservation).
+(b)  The new kinetic energy is 2.5 times the initial kinetic energy of rotation.  The child
+uses his internal energy to increase his rotational kinetic energy.
+6.13 25 s-2;  10 m s-2
+6.14 36 kW
+6.15 at R/6 from the center of original disc opposite to the center of cut portion.
+6.16 66.0 g
+6.17 6.75×1012 rad s–1
+Chapter    7
+7.1 (a ) No.
+(b) Yes, if the size of the space ship is lar ge enough for him to detect the variation in g.
+(c) Tidal ef fect depends inversely on the cube of the distance unlike for ce, which depends
+inversely on the square of the distance.
+7.2 (a)  decreases; (b) decreases; (c) mass of the body; (d) more.
+7.3 Smaller by a factor of 0.63.
+7.5 3.54 × 108 years.
+7.6 (a) Kinetic energy, (b) less,
+7.7 (a) No, (b) No, (c) No, (d) Y es
+[The escape velocity is independent of mass of the body and the direction of projection.
+It depends upon  the gravitational potential at the point from where the body is launched.
+Since this potential depends (slightly) on the latitude and height of the point, the escape
+Reprint 2025-26
+
+
+--- Page 7 ---
+166 PHYSICS
+velocity (speed) depends (slightly) on these factors.]
+7.8  All quantities vary over an orbit except angular momentum and total energy.
+7.9  (b), (c) and (d)
+7.10 and 7.11 For  these two pr oblems, complete the hemispher e to spher e. At both P , and C,
+potential is constant and hence intensity = 0. Therefore, for the hemisphere, (c) and (e)
+are correct.
+7.12 2.6 × 108 m
+7.13 2.0 × 1030 kg
+7.14 1.43 × 1012 m
+7.15 28 N
+7.16 125 N
+7.17 8.0 × 106 m from the earth’s centre
+7.18 31.7 km/s
+7.19 5.9 × 109 J
+7.20 2.6 × 106 m/s
+7.21 0, 2.7 × 10-8 J/kg; an object placed at the mid point is in an unstable equilibrium P                 C
+Reprint 2025-26
+
+
+--- Page 8 ---
+ANSWERS 167
+Notes
+Reprint 2025-26
+
+
+--- Page 9 ---
+168 PHYSICS
+Notes
+Reprint 2025-26
