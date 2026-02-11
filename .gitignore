@@ -1,10 +1,12 @@
 venv/
 tbenv/
+ragVenv/
 models/
 wandb/
 data/raw/
 data/processed/ai2d_physics_upg/
 data/vector_db/
 checkpoints/
+output/
 *.pth
 *.bin
