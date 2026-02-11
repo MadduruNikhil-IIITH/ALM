@@ -1,6 +1,9 @@
 """
 Phase 1: Vision Model SFT (Image → UPG JSON)
-STABLE 8GB RTX 4060 VERSION – Fixed size keys + no truncation + grad checkpointing
+STABLE VERSION for RTX 4060 8GB + wandb logging with curves
+- Frequent logging for visible loss curves
+- Eval temporarily disabled to avoid token mismatch
+- Processor truncation forced off
 """
 
 import json
@@ -24,7 +27,7 @@ LORA_DROPOUT = 0.05
 TARGET_MODULES = ["q_proj", "v_proj"]
 
 BATCH_SIZE = 1
-GRAD_ACCUM = 8                              # → 16 if stable after first run
+GRAD_ACCUM = 8
 EPOCHS = 1
 LR = 5e-5
 
@@ -33,19 +36,19 @@ OUTPUT_DIR = Path("checkpoints/vision_sft_test")
 MODEL_SAVE_DIR = Path("models/vision_parser_sft_test")
 
 # ────────────────────────────────────────────────
-# Load small subset
+# Load data (small for testing)
 # ────────────────────────────────────────────────
 print("Loading pairs...")
 with open(PAIRS_FILE, "r", encoding="utf-8") as f:
     pairs = json.load(f)
 
-MIN_DATA = 20
+MIN_DATA = 100                               # Increase later
 pairs = pairs[:MIN_DATA]
 print(f"Using {len(pairs)} examples")
 
 wandb.init(
     project="ALM",          # Your project name
-    name="vision_test_sft_ai2d_20ex",        # Run name
+    name=f"vision_test_sft_ai2d_{MIN_DATA}ex",        # Run name
     config={                            # Optional: log hyperparameters
         "model": MODEL_NAME,
         "lora_rank": LORA_RANK,
@@ -61,7 +64,7 @@ wandb.init(
 
 def format_example(example):
     image = Image.open(example["image_path"]).convert("RGB")
-    tgt_str = example["upg_target"] 
+    tgt_str = example["upg_target"]
     messages = [
         {"role": "user", "content": [{"type": "image"}, {"type": "text", "text": "Parse this physics diagram into the Unified Physical Graph JSON format."}]},
         {"role": "assistant", "content": [{"type": "text", "text": tgt_str}]}
@@ -74,6 +77,7 @@ dataset = Dataset.from_dict({
     "diagram_id": [p["diagram_id"] for p in pairs]
 })
 train_dataset = dataset.map(format_example, batched=False, remove_columns=dataset.column_names)
+print(f"Train examples: {len(train_dataset)}")  # No eval for now
 
 # ────────────────────────────────────────────────
 # Processor & Model
@@ -81,15 +85,15 @@ train_dataset = dataset.map(format_example, batched=False, remove_columns=datase
 print("Loading processor & model...")
 processor = AutoProcessor.from_pretrained(MODEL_NAME)
 
-# FIX: Correct size format for edge keys (required by fast processor)
-processor.image_processor.size = {
-    "shortest_edge": 224,
-    "longest_edge": 896             # ~200k pixels max → good for 8GB VRAM
-}
+# Critical fix for mismatch: Force-disable truncation
+processor.tokenizer.truncation = False
+processor.tokenizer.padding = False
 
-# Long sequences: no truncation
-processor.tokenizer.model_max_length = 32768
-processor.tokenizer.truncation_side = "left"
+# Cap resolution for 8GB VRAM
+processor.image_processor.size = {"shortest_edge": 224, "longest_edge": 896}
+
+# Long context support
+processor.tokenizer.model_max_length = 65536  # Higher to give headroom
 
 model = Qwen2VLForConditionalGeneration.from_pretrained(
     MODEL_NAME,
@@ -123,17 +127,21 @@ sft_config = SFTConfig(
     weight_decay=0.01,
     warmup_steps=20,
     bf16=True,
-    logging_steps=5,
-    save_steps=20,
+    logging_steps=1,                        # Frequent for curves
+    save_steps=5,
     save_total_limit=2,
     report_to="wandb",
-    run_name="vision_test_sft_ai2d_20ex",    # Optional: custom run name for easy identification
-    project="ALM",          # Optional: group runs under a project name
     dataloader_num_workers=0,
     lr_scheduler_type="cosine",
-    max_length=None,                        # Full long JSONs + image tokens
+
+    # VRAM savings
     gradient_checkpointing=True,
     gradient_checkpointing_kwargs={"use_reentrant": False},
+
+    # Eval disabled temporarily to avoid mismatch
+    # eval_strategy="steps",
+    # eval_steps=1,
+    # do_eval=True,
 )
 
 # ────────────────────────────────────────────────
@@ -143,14 +151,16 @@ trainer = SFTTrainer(
     model=model,
     args=sft_config,
     train_dataset=train_dataset,
+    # eval_dataset=eval_dataset,  # ← Commented out
     processing_class=processor,
 )
 
-print("Starting SFT training on RTX 4060 8GB...")
+print("Starting SFT training on RTX 4060 8GB with wandb logging...")
 trainer.train()
 
+# Save
 trainer.save_model(str(MODEL_SAVE_DIR))
 processor.save_pretrained(str(MODEL_SAVE_DIR))
 
+print(f"Training finished.")
 print(f"Model saved to: {MODEL_SAVE_DIR}")
-print("Monitor VRAM with nvidia-smi; adjust longest_edge down if OOM.")
