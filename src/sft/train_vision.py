@@ -42,7 +42,7 @@ print("Loading pairs...")
 with open(PAIRS_FILE, "r", encoding="utf-8") as f:
     pairs = json.load(f)
 
-MIN_DATA = 100                               # Increase later
+MIN_DATA = len(pairs)                               # Increase later
 pairs = pairs[:MIN_DATA]
 print(f"Using {len(pairs)} examples")
 
@@ -50,7 +50,7 @@ wandb.init(
     project="ALM",          # Your project name
     name=f"vision_test_sft_ai2d_{MIN_DATA}ex",        # Run name
     config={                            # Optional: log hyperparameters
-        "model": MODEL_NAME,
+        "model": MODEL_NAME,    
         "lora_rank": LORA_RANK,
         "batch_size": BATCH_SIZE * GRAD_ACCUM,
         "epochs": EPOCHS,
@@ -164,3 +164,6 @@ processor.save_pretrained(str(MODEL_SAVE_DIR))
 
 print(f"Training finished.")
 print(f"Model saved to: {MODEL_SAVE_DIR}")
+
+# Finish W&B run (good practice)
+wandb.finish()
