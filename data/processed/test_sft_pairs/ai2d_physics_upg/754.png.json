@@ -1,0 +1,1545 @@
+{
+  "diagram_id": "754",
+  "image_path": "data/raw/ai2d/images/754.png",
+  "source": "ai2d",
+  "nodes": [
+    {
+      "id": "T0",
+      "type": "Text",
+      "label": "4",
+      "attributes": {
+        "rectangle": [
+          [
+            85,
+            86
+          ],
+          [
+            101,
+            104
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T1",
+      "type": "Text",
+      "label": "3",
+      "attributes": {
+        "rectangle": [
+          [
+            180,
+            42
+          ],
+          [
+            192,
+            57
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T10",
+      "type": "Text",
+      "label": "Sunrise",
+      "attributes": {
+        "rectangle": [
+          [
+            163,
+            248
+          ],
+          [
+            209,
+            263
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T11",
+      "type": "Text",
+      "label": "8",
+      "attributes": {
+        "rectangle": [
+          [
+            274,
+            269
+          ],
+          [
+            291,
+            286
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T12",
+      "type": "Text",
+      "label": "7",
+      "attributes": {
+        "rectangle": [
+          [
+            175,
+            312
+          ],
+          [
+            194,
+            328
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T13",
+      "type": "Text",
+      "label": "6",
+      "attributes": {
+        "rectangle": [
+          [
+            82,
+            270
+          ],
+          [
+            101,
+            288
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T14",
+      "type": "Text",
+      "label": "5",
+      "attributes": {
+        "rectangle": [
+          [
+            42,
+            180
+          ],
+          [
+            53,
+            197
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T2",
+      "type": "Text",
+      "label": "2",
+      "attributes": {
+        "rectangle": [
+          [
+            276,
+            82
+          ],
+          [
+            291,
+            102
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T3",
+      "type": "Text",
+      "label": "1",
+      "attributes": {
+        "rectangle": [
+          [
+            323,
+            182
+          ],
+          [
+            333,
+            201
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T4",
+      "type": "Text",
+      "label": "Moon",
+      "attributes": {
+        "rectangle": [
+          [
+            328,
+            151
+          ],
+          [
+            369,
+            166
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T5",
+      "type": "Text",
+      "label": "to Sun",
+      "attributes": {
+        "rectangle": [
+          [
+            385,
+            198
+          ],
+          [
+            441,
+            217
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T6",
+      "type": "Text",
+      "label": "Sunset",
+      "attributes": {
+        "rectangle": [
+          [
+            165,
+            113
+          ],
+          [
+            211,
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T7",
+      "type": "Text",
+      "label": "Noon",
+      "attributes": {
+        "rectangle": [
+          [
+            246,
+            181
+          ],
+          [
+            280,
+            201
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T8",
+      "type": "Text",
+      "label": "Midnight",
+      "attributes": {
+        "rectangle": [
+          [
+            71,
+            182
+          ],
+          [
+            126,
+            199
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T9",
+      "type": "Text",
+      "label": "Earth",
+      "attributes": {
+        "rectangle": [
+          [
+            121,
+            212
+          ],
+          [
+            158,
+            226
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B0",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            62,
+            282
+          ],
+          [
+            79,
+            284
+          ],
+          [
+            89,
+            298
+          ],
+          [
+            87,
+            312
+          ],
+          [
+            81,
+            318
+          ],
+          [
+            70,
+            320
+          ],
+          [
+            57,
+            314
+          ],
+          [
+            54,
+            304
+          ],
+          [
+            55,
+            296
+          ],
+          [
+            62,
+            285
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B1",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            188,
+            336
+          ],
+          [
+            203,
+            347
+          ],
+          [
+            206,
+            363
+          ],
+          [
+            199,
+            370
+          ],
+          [
+            187,
+            371
+          ],
+          [
+            177,
+            371
+          ],
+          [
+            171,
+            360
+          ],
+          [
+            170,
+            350
+          ],
+          [
+            176,
+            342
+          ],
+          [
+            186,
+            339
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B2",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            296,
+            300
+          ],
+          [
+            297,
+            312
+          ],
+          [
+            306,
+            315
+          ],
+          [
+            317,
+            316
+          ],
+          [
+            328,
+            311
+          ],
+          [
+            331,
+            298
+          ],
+          [
+            324,
+            286
+          ],
+          [
+            319,
+            285
+          ],
+          [
+            311,
+            284
+          ],
+          [
+            303,
+            287
+          ],
+          [
+            297,
+            298
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B3",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            341,
+            194
+          ],
+          [
+            348,
+            204
+          ],
+          [
+            357,
+            205
+          ],
+          [
+            371,
+            204
+          ],
+          [
+            376,
+            195
+          ],
+          [
+            375,
+            181
+          ],
+          [
+            365,
+            174
+          ],
+          [
+            358,
+            174
+          ],
+          [
+            350,
+            175
+          ],
+          [
+            343,
+            181
+          ],
+          [
+            338,
+            191
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B4",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            297,
+            56
+          ],
+          [
+            294,
+            64
+          ],
+          [
+            291,
+            72
+          ],
+          [
+            295,
+            83
+          ],
+          [
+            306,
+            87
+          ],
+          [
+            320,
+            86
+          ],
+          [
+            326,
+            79
+          ],
+          [
+            329,
+            69
+          ],
+          [
+            321,
+            54
+          ],
+          [
+            309,
+            55
+          ],
+          [
+            296,
+            53
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B5",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            206,
+            18
+          ],
+          [
+            202,
+            32
+          ],
+          [
+            195,
+            36
+          ],
+          [
+            185,
+            38
+          ],
+          [
+            176,
+            34
+          ],
+          [
+            173,
+            28
+          ],
+          [
+            171,
+            22
+          ],
+          [
+            170,
+            18
+          ],
+          [
+            172,
+            14
+          ],
+          [
+            174,
+            11
+          ],
+          [
+            179,
+            8
+          ],
+          [
+            186,
+            4
+          ],
+          [
+            195,
+            6
+          ],
+          [
+            204,
+            11
+          ],
+          [
+            205,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B6",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            83,
+            54
+          ],
+          [
+            88,
+            72
+          ],
+          [
+            82,
+            85
+          ],
+          [
+            70,
+            86
+          ],
+          [
+            57,
+            83
+          ],
+          [
+            55,
+            72
+          ],
+          [
+            57,
+            62
+          ],
+          [
+            67,
+            53
+          ],
+          [
+            76,
+            53
+          ],
+          [
+            87,
+            55
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B7",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            23,
+            172
+          ],
+          [
+            33,
+            177
+          ],
+          [
+            40,
+            192
+          ],
+          [
+            36,
+            200
+          ],
+          [
+            29,
+            206
+          ],
+          [
+            18,
+            207
+          ],
+          [
+            5,
+            200
+          ],
+          [
+            4,
+            189
+          ],
+          [
+            8,
+            177
+          ],
+          [
+            17,
+            174
+          ],
+          [
+            21,
+            173
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B8",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            161,
+            170
+          ],
+          [
+            181,
+            159
+          ],
+          [
+            199,
+            162
+          ],
+          [
+            215,
+            178
+          ],
+          [
+            218,
+            202
+          ],
+          [
+            208,
+            214
+          ],
+          [
+            195,
+            220
+          ],
+          [
+            179,
+            220
+          ],
+          [
+            162,
+            212
+          ],
+          [
+            156,
+            197
+          ],
+          [
+            158,
+            183
+          ],
+          [
+            160,
+            174
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A0",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            179,
+            11
+          ],
+          [
+            178,
+            26
+          ],
+          [
+            154,
+            31
+          ],
+          [
+            106,
+            49
+          ],
+          [
+            82,
+            69
+          ],
+          [
+            78,
+            61
+          ],
+          [
+            90,
+            45
+          ],
+          [
+            115,
+            34
+          ],
+          [
+            139,
+            22
+          ],
+          [
+            161,
+            17
+          ],
+          [
+            182,
+            13
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A1",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            198,
+            14
+          ],
+          [
+            200,
+            30
+          ],
+          [
+            224,
+            31
+          ],
+          [
+            249,
+            39
+          ],
+          [
+            274,
+            48
+          ],
+          [
+            291,
+            62
+          ],
+          [
+            300,
+            65
+          ],
+          [
+            306,
+            53
+          ],
+          [
+            292,
+            43
+          ],
+          [
+            266,
+            26
+          ],
+          [
+            222,
+            14
+          ],
+          [
+            195,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A10",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            220,
+            177
+          ],
+          [
+            220,
+            201
+          ],
+          [
+            250,
+            201
+          ],
+          [
+            252,
+            183
+          ],
+          [
+            220,
+            177
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A11",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            197,
+            222
+          ],
+          [
+            197,
+            254
+          ],
+          [
+            177,
+            255
+          ],
+          [
+            179,
+            230
+          ],
+          [
+            180,
+            225
+          ],
+          [
+            199,
+            222
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A12",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            158,
+            178
+          ],
+          [
+            158,
+            201
+          ],
+          [
+            124,
+            199
+          ],
+          [
+            124,
+            187
+          ],
+          [
+            126,
+            182
+          ],
+          [
+            158,
+            179
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A2",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            311,
+            76
+          ],
+          [
+            325,
+            100
+          ],
+          [
+            337,
+            121
+          ],
+          [
+            346,
+            142
+          ],
+          [
+            350,
+            153
+          ],
+          [
+            360,
+            153
+          ],
+          [
+            361,
+            135
+          ],
+          [
+            341,
+            95
+          ],
+          [
+            330,
+            79
+          ],
+          [
+            320,
+            73
+          ],
+          [
+            315,
+            73
+          ],
+          [
+            312,
+            75
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A3",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            392,
+            179
+          ],
+          [
+            392,
+            195
+          ],
+          [
+            445,
+            198
+          ],
+          [
+            445,
+            177
+          ],
+          [
+            392,
+            177
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A4",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            364,
+            195
+          ],
+          [
+            362,
+            223
+          ],
+          [
+            351,
+            261
+          ],
+          [
+            334,
+            289
+          ],
+          [
+            321,
+            299
+          ],
+          [
+            316,
+            291
+          ],
+          [
+            335,
+            267
+          ],
+          [
+            344,
+            237
+          ],
+          [
+            349,
+            211
+          ],
+          [
+            354,
+            185
+          ],
+          [
+            364,
+            191
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A5",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            304,
+            301
+          ],
+          [
+            311,
+            316
+          ],
+          [
+            274,
+            340
+          ],
+          [
+            244,
+            349
+          ],
+          [
+            215,
+            360
+          ],
+          [
+            200,
+            358
+          ],
+          [
+            199,
+            352
+          ],
+          [
+            226,
+            345
+          ],
+          [
+            263,
+            333
+          ],
+          [
+            290,
+            315
+          ],
+          [
+            305,
+            303
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A6",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            80,
+            300
+          ],
+          [
+            102,
+            323
+          ],
+          [
+            126,
+            333
+          ],
+          [
+            145,
+            341
+          ],
+          [
+            164,
+            347
+          ],
+          [
+            176,
+            349
+          ],
+          [
+            182,
+            359
+          ],
+          [
+            175,
+            361
+          ],
+          [
+            160,
+            359
+          ],
+          [
+            115,
+            347
+          ],
+          [
+            86,
+            330
+          ],
+          [
+            76,
+            314
+          ],
+          [
+            77,
+            298
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A7",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            30,
+            197
+          ],
+          [
+            33,
+            225
+          ],
+          [
+            46,
+            254
+          ],
+          [
+            56,
+            275
+          ],
+          [
+            65,
+            290
+          ],
+          [
+            60,
+            295
+          ],
+          [
+            52,
+            292
+          ],
+          [
+            33,
+            255
+          ],
+          [
+            25,
+            220
+          ],
+          [
+            21,
+            205
+          ],
+          [
+            24,
+            192
+          ],
+          [
+            31,
+            194
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A8",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            58,
+            69
+          ],
+          [
+            70,
+            84
+          ],
+          [
+            55,
+            107
+          ],
+          [
+            35,
+            147
+          ],
+          [
+            29,
+            177
+          ],
+          [
+            20,
+            179
+          ],
+          [
+            15,
+            170
+          ],
+          [
+            28,
+            131
+          ],
+          [
+            38,
+            101
+          ],
+          [
+            49,
+            84
+          ],
+          [
+            60,
+            69
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A9",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            176,
+            120
+          ],
+          [
+            176,
+            151
+          ],
+          [
+            199,
+            153
+          ],
+          [
+            201,
+            123
+          ],
+          [
+            179,
+            123
+          ]
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "B0",
+      "to": "B1",
+      "type": "ComponentLink",
+      "via": "A6",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B0",
+      "to": "B7",
+      "type": "ComponentLink",
+      "via": "A7",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B2",
+      "to": "B3",
+      "type": "ComponentLink",
+      "via": "A4",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B2",
+      "to": "B1",
+      "type": "ComponentLink",
+      "via": "A5",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B3",
+      "to": "B4",
+      "type": "ComponentLink",
+      "via": "A2",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B4",
+      "to": "B5",
+      "type": "ComponentLink",
+      "via": "A1",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B5",
+      "to": "B6",
+      "type": "ComponentLink",
+      "via": "A0",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B6",
+      "to": "B7",
+      "type": "ComponentLink",
+      "via": "A8",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T0",
+      "to": "B6",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T1",
+      "to": "B5",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T10",
+      "to": "B8",
+      "type": "intraObjectLinkage",
+      "via": "A11",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T10",
+      "to": "B8",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T11",
+      "to": "B2",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T12",
+      "to": "B1",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T13",
+      "to": "B0",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T14",
+      "to": "B7",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T2",
+      "to": "B4",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T3",
+      "to": "B3",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T4",
+      "to": "B3",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T5",
+      "to": "A3",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T6",
+      "to": "B8",
+      "type": "intraObjectLinkage",
+      "via": "A9",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T6",
+      "to": "B8",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T7",
+      "to": "B8",
+      "type": "intraObjectLinkage",
+      "via": "A10",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T7",
+      "to": "B8",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T8",
+      "to": "B8",
+      "type": "intraObjectLinkage",
+      "via": "A12",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T8",
+      "to": "B8",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T9",
+      "to": "B8",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    }
+  ],
+  "globals": {
+    "gravity": 9.81,
+    "has_friction": false,
+    "coordinate_system": "cartesian"
+  }
+}

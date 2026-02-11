@@ -1,0 +1,375 @@
+{
+  "diagram_id": "737",
+  "image_path": "data/raw/ai2d/images/737.png",
+  "source": "ai2d",
+  "nodes": [
+    {
+      "id": "T0",
+      "type": "Text",
+      "label": "Earth",
+      "attributes": {
+        "rectangle": [
+          [
+            164,
+            330
+          ],
+          [
+            208,
+            345
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T1",
+      "type": "MechanicsLabel",
+      "label": "Gravity",
+      "attributes": {
+        "rectangle": [
+          [
+            294,
+            219
+          ],
+          [
+            346,
+            244
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T2",
+      "type": "MechanicsLabel",
+      "label": "Gravity",
+      "attributes": {
+        "rectangle": [
+          [
+            454,
+            219
+          ],
+          [
+            506,
+            240
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T3",
+      "type": "Text",
+      "label": "Moon",
+      "attributes": {
+        "rectangle": [
+          [
+            584,
+            260
+          ],
+          [
+            630,
+            278
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T4",
+      "type": "Text",
+      "label": "Moon's speed",
+      "attributes": {
+        "rectangle": [
+          [
+            610,
+            178
+          ],
+          [
+            696,
+            198
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B0",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            142,
+            312
+          ],
+          [
+            110,
+            290
+          ],
+          [
+            92,
+            244
+          ],
+          [
+            90,
+            212
+          ],
+          [
+            100,
+            172
+          ],
+          [
+            129,
+            142
+          ],
+          [
+            160,
+            129
+          ],
+          [
+            201,
+            122
+          ],
+          [
+            236,
+            134
+          ],
+          [
+            273,
+            171
+          ],
+          [
+            285,
+            202
+          ],
+          [
+            279,
+            255
+          ],
+          [
+            284,
+            266
+          ],
+          [
+            268,
+            291
+          ],
+          [
+            248,
+            315
+          ],
+          [
+            207,
+            324
+          ],
+          [
+            177,
+            328
+          ],
+          [
+            146,
+            314
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B1",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            567,
+            244
+          ],
+          [
+            556,
+            236
+          ],
+          [
+            561,
+            213
+          ],
+          [
+            584,
+            202
+          ],
+          [
+            600,
+            206
+          ],
+          [
+            610,
+            214
+          ],
+          [
+            615,
+            231
+          ],
+          [
+            608,
+            248
+          ],
+          [
+            594,
+            254
+          ],
+          [
+            574,
+            254
+          ],
+          [
+            568,
+            243
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A0",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            504,
+            218
+          ],
+          [
+            506,
+            248
+          ],
+          [
+            576,
+            244
+          ],
+          [
+            580,
+            216
+          ],
+          [
+            508,
+            218
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A1",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            644,
+            195
+          ],
+          [
+            634,
+            216
+          ],
+          [
+            644,
+            219
+          ],
+          [
+            645,
+            272
+          ],
+          [
+            662,
+            268
+          ],
+          [
+            658,
+            218
+          ],
+          [
+            664,
+            213
+          ],
+          [
+            648,
+            194
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A2",
+      "type": "ConnectionArrow",
+      "attributes": {
+        "polygon": [
+          [
+            196,
+            238
+          ],
+          [
+            244,
+            240
+          ],
+          [
+            261,
+            230
+          ],
+          [
+            243,
+            214
+          ],
+          [
+            243,
+            222
+          ],
+          [
+            189,
+            225
+          ],
+          [
+            190,
+            240
+          ]
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "T0",
+      "to": "B0",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T1",
+      "to": "A2",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T2",
+      "to": "A0",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T3",
+      "to": "B1",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T4",
+      "to": "A1",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    }
+  ],
+  "globals": {
+    "gravity": 9.81,
+    "has_friction": false,
+    "coordinate_system": "cartesian"
+  }
+}

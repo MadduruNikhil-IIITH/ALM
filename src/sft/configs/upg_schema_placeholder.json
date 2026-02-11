@@ -1,0 +1,40 @@
+{
+  "description": "Placeholder / estimated UPG schema for development (Feb 2026). Update when Person 1 provides final version.",
+  "example_structure": {
+    "diagram_id": "string",
+    "image_path": "string (relative or absolute)",
+    "source": "ai2d | cghd | other",
+    "nodes": [
+      {
+        "id": "string (unique)",
+        "type": "Mass | Spring | Pulley | FixedPoint | ForceArrow | Text | Other",
+        "label": "string | null (visible text)",
+        "attributes": {
+          "position": ["float", "float"],
+          "bounding_box": ["x1", "y1", "x2", "y2"],
+          "mass": "float | null",
+          "stiffness": "float | null",
+          "force_magnitude": "float | null"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "string (node id)",
+        "to": "string (node id)",
+        "type": "Connected | AppliesForce | Supports | Tension | Other",
+        "directed": "true | false",
+        "constraints": {
+          "length_rest": "float | null",
+          "stiffness": "float | null",
+          "force_vector": "[float, float] | null"
+        }
+      }
+    ],
+    "globals": {
+      "gravity": 9.81,
+      "has_friction": "false | true | null",
+      "coordinate_system": "cartesian | null"
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "diagram_id": "747",
+  "image_path": "data/raw/ai2d/images/747.png",
+  "source": "ai2d",
+  "nodes": [
+    {
+      "id": "T0",
+      "type": "Text",
+      "label": "earth",
+      "attributes": {
+        "rectangle": [
+          [
+            182,
+            93
+          ],
+          [
+            236,
+            112
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T1",
+      "type": "Text",
+      "label": "moon",
+      "attributes": {
+        "rectangle": [
+          [
+            79,
+            168
+          ],
+          [
+            130,
+            190
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T2",
+      "type": "Text",
+      "label": "sun",
+      "attributes": {
+        "rectangle": [
+          [
+            588,
+            105
+          ],
+          [
+            627,
+            123
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B0",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            178,
+            169
+          ],
+          [
+            178,
+            180
+          ],
+          [
+            175,
+            187
+          ],
+          [
+            165,
+            194
+          ],
+          [
+            160,
+            197
+          ],
+          [
+            155,
+            197
+          ],
+          [
+            146,
+            193
+          ],
+          [
+            140,
+            188
+          ],
+          [
+            140,
+            178
+          ],
+          [
+            140,
+            170
+          ],
+          [
+            150,
+            161
+          ],
+          [
+            157,
+            159
+          ],
+          [
+            168,
+            160
+          ],
+          [
+            178,
+            168
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B1",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            260,
+            131
+          ],
+          [
+            264,
+            119
+          ],
+          [
+            265,
+            98
+          ],
+          [
+            262,
+            80
+          ],
+          [
+            253,
+            67
+          ],
+          [
+            243,
+            56
+          ],
+          [
+            232,
+            52
+          ],
+          [
+            217,
+            51
+          ],
+          [
+            204,
+            50
+          ],
+          [
+            193,
+            56
+          ],
+          [
+            174,
+            70
+          ],
+          [
+            168,
+            84
+          ],
+          [
+            164,
+            95
+          ],
+          [
+            165,
+            114
+          ],
+          [
+            175,
+            131
+          ],
+          [
+            196,
+            150
+          ],
+          [
+            212,
+            152
+          ],
+          [
+            226,
+            151
+          ],
+          [
+            244,
+            142
+          ],
+          [
+            254,
+            133
+          ],
+          [
+            260,
+            132
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B2",
+      "type": "Component",
+      "attributes": {
+        "polygon": [
+          [
+            596,
+            0
+          ],
+          [
+            584,
+            52
+          ],
+          [
+            578,
+            70
+          ],
+          [
+            580,
+            137
+          ],
+          [
+            584,
+            166
+          ],
+          [
+            592,
+            199
+          ],
+          [
+            596,
+            221
+          ],
+          [
+            632,
+            222
+          ],
+          [
+            634,
+            4
+          ],
+          [
+            596,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "T0",
+      "to": "B1",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T1",
+      "to": "B0",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T2",
+      "to": "B2",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    }
+  ],
+  "globals": {
+    "gravity": 9.81,
+    "has_friction": false,
+    "coordinate_system": "cartesian"
+  }
+}

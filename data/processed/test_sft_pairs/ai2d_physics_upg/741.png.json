@@ -1,0 +1,1462 @@
+{
+  "diagram_id": "741",
+  "image_path": "data/raw/ai2d/images/741.png",
+  "source": "ai2d",
+  "nodes": [
+    {
+      "id": "T0",
+      "type": "Text",
+      "label": "Earth's Orbital Motion",
+      "attributes": {
+        "rectangle": [
+          [
+            43,
+            3
+          ],
+          [
+            218,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T1",
+      "type": "Text",
+      "label": "Copyright 2005 R.L. McNish, All rights reserved",
+      "attributes": {
+        "rectangle": [
+          [
+            3,
+            25
+          ],
+          [
+            259,
+            47
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T10",
+      "type": "SeasonLabel",
+      "label": "Winter Solstice. Sun lowest in the southern sky.",
+      "attributes": {
+        "rectangle": [
+          [
+            473,
+            207
+          ],
+          [
+            554,
+            247
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T11",
+      "type": "SeasonLabel",
+      "label": "Fall Equinox Sun above the Equator",
+      "attributes": {
+        "rectangle": [
+          [
+            252,
+            245
+          ],
+          [
+            314,
+            285
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T12",
+      "type": "Text",
+      "label": "Earth's rotation is from West to East.",
+      "attributes": {
+        "rectangle": [
+          [
+            219,
+            296
+          ],
+          [
+            307,
+            325
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T13",
+      "type": "Text",
+      "label": "Earth's orbital motion is counter-clockwise around the Sun as seen from the North side of the solar system.",
+      "attributes": {
+        "rectangle": [
+          [
+            196,
+            339
+          ],
+          [
+            430,
+            365
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T14",
+      "type": "Text",
+      "label": "To the Celestial Equator",
+      "attributes": {
+        "rectangle": [
+          [
+            625,
+            230
+          ],
+          [
+            677,
+            276
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T15",
+      "type": "Text",
+      "label": "To S. Celestial Pole",
+      "attributes": {
+        "rectangle": [
+          [
+            430,
+            357
+          ],
+          [
+            531,
+            381
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T2",
+      "type": "Text",
+      "label": "Earth is tilted 23.4 from the plane of its orbit.",
+      "attributes": {
+        "rectangle": [
+          [
+            489,
+            46
+          ],
+          [
+            593,
+            89
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T3",
+      "type": "Text",
+      "label": "Polaris To N. Celestial Pole",
+      "attributes": {
+        "rectangle": [
+          [
+            639,
+            22
+          ],
+          [
+            738,
+            59
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T4",
+      "type": "Text",
+      "label": "To the celestial Equator",
+      "attributes": {
+        "rectangle": [
+          [
+            13,
+            130
+          ],
+          [
+            73,
+            176
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T5",
+      "type": "Text",
+      "label": "Ecliptic lowest in the night sky.",
+      "attributes": {
+        "rectangle": [
+          [
+            1,
+            209
+          ],
+          [
+            76,
+            239
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T6",
+      "type": "SeasonLabel",
+      "label": "Summer Solstice. Sun highest in the northern sky.",
+      "attributes": {
+        "rectangle": [
+          [
+            135,
+            166
+          ],
+          [
+            216,
+            206
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T7",
+      "type": "SeasonLabel",
+      "label": "Spring Equinox Sun above the Equator",
+      "attributes": {
+        "rectangle": [
+          [
+            379,
+            122
+          ],
+          [
+            445,
+            166
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T8",
+      "type": "Text",
+      "label": "Orbital Plane of the Ecliptic",
+      "attributes": {
+        "rectangle": [
+          [
+            372,
+            185
+          ],
+          [
+            504,
+            209
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T9",
+      "type": "Text",
+      "label": "Ecliptic highest in the night sky.",
+      "attributes": {
+        "rectangle": [
+          [
+            618,
+            175
+          ],
+          [
+            692,
+            205
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B0",
+      "type": "CelestialBody",
+      "attributes": {
+        "polygon": [
+          [
+            76,
+            233
+          ],
+          [
+            65,
+            196
+          ],
+          [
+            83,
+            176
+          ],
+          [
+            99,
+            172
+          ],
+          [
+            124,
+            176
+          ],
+          [
+            147,
+            210
+          ],
+          [
+            117,
+            239
+          ],
+          [
+            87,
+            236
+          ],
+          [
+            74,
+            233
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B1",
+      "type": "CelestialBody",
+      "attributes": {
+        "polygon": [
+          [
+            326,
+            147
+          ],
+          [
+            310,
+            123
+          ],
+          [
+            316,
+            102
+          ],
+          [
+            342,
+            83
+          ],
+          [
+            372,
+            102
+          ],
+          [
+            378,
+            132
+          ],
+          [
+            357,
+            157
+          ],
+          [
+            328,
+            150
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B2",
+      "type": "CelestialBody",
+      "attributes": {
+        "polygon": [
+          [
+            329,
+            221
+          ],
+          [
+            316,
+            207
+          ],
+          [
+            328,
+            185
+          ],
+          [
+            350,
+            178
+          ],
+          [
+            370,
+            200
+          ],
+          [
+            363,
+            221
+          ],
+          [
+            345,
+            233
+          ],
+          [
+            329,
+            222
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B3",
+      "type": "CelestialBody",
+      "attributes": {
+        "polygon": [
+          [
+            316,
+            299
+          ],
+          [
+            311,
+            280
+          ],
+          [
+            323,
+            256
+          ],
+          [
+            354,
+            252
+          ],
+          [
+            379,
+            279
+          ],
+          [
+            375,
+            308
+          ],
+          [
+            351,
+            319
+          ],
+          [
+            335,
+            319
+          ],
+          [
+            313,
+            302
+          ]
+        ]
+      }
+    },
+    {
+      "id": "B4",
+      "type": "CelestialBody",
+      "attributes": {
+        "polygon": [
+          [
+            559,
+            225
+          ],
+          [
+            553,
+            199
+          ],
+          [
+            562,
+            175
+          ],
+          [
+            584,
+            169
+          ],
+          [
+            606,
+            178
+          ],
+          [
+            621,
+            200
+          ],
+          [
+            612,
+            227
+          ],
+          [
+            585,
+            243
+          ],
+          [
+            556,
+            227
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A0",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            120,
+            178
+          ],
+          [
+            144,
+            165
+          ],
+          [
+            184,
+            147
+          ],
+          [
+            247,
+            132
+          ],
+          [
+            314,
+            126
+          ],
+          [
+            314,
+            117
+          ],
+          [
+            279,
+            117
+          ],
+          [
+            213,
+            129
+          ],
+          [
+            179,
+            138
+          ],
+          [
+            142,
+            151
+          ],
+          [
+            114,
+            166
+          ],
+          [
+            105,
+            172
+          ],
+          [
+            122,
+            178
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A1",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            369,
+            126
+          ],
+          [
+            428,
+            132
+          ],
+          [
+            479,
+            141
+          ],
+          [
+            532,
+            157
+          ],
+          [
+            569,
+            182
+          ],
+          [
+            576,
+            178
+          ],
+          [
+            560,
+            160
+          ],
+          [
+            523,
+            142
+          ],
+          [
+            468,
+            127
+          ],
+          [
+            409,
+            119
+          ],
+          [
+            369,
+            117
+          ],
+          [
+            369,
+            124
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A10",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            310,
+            110
+          ],
+          [
+            373,
+            141
+          ],
+          [
+            378,
+            130
+          ],
+          [
+            316,
+            102
+          ],
+          [
+            311,
+            111
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A11",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            310,
+            73
+          ],
+          [
+            310,
+            86
+          ],
+          [
+            370,
+            84
+          ],
+          [
+            369,
+            73
+          ],
+          [
+            313,
+            76
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A12",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            584,
+            105
+          ],
+          [
+            584,
+            122
+          ],
+          [
+            596,
+            123
+          ],
+          [
+            619,
+            132
+          ],
+          [
+            624,
+            122
+          ],
+          [
+            611,
+            111
+          ],
+          [
+            585,
+            107
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A13",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            547,
+            292
+          ],
+          [
+            565,
+            301
+          ],
+          [
+            591,
+            299
+          ],
+          [
+            590,
+            290
+          ],
+          [
+            568,
+            290
+          ],
+          [
+            551,
+            279
+          ],
+          [
+            547,
+            290
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A14",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            301,
+            317
+          ],
+          [
+            325,
+            298
+          ],
+          [
+            365,
+            314
+          ],
+          [
+            370,
+            308
+          ],
+          [
+            326,
+            285
+          ],
+          [
+            292,
+            313
+          ],
+          [
+            301,
+            317
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A15",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            316,
+            328
+          ],
+          [
+            372,
+            328
+          ],
+          [
+            370,
+            341
+          ],
+          [
+            314,
+            342
+          ],
+          [
+            313,
+            328
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A16",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            310,
+            279
+          ],
+          [
+            370,
+            305
+          ],
+          [
+            376,
+            298
+          ],
+          [
+            316,
+            273
+          ],
+          [
+            308,
+            285
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A17",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            336,
+            227
+          ],
+          [
+            336,
+            255
+          ],
+          [
+            351,
+            255
+          ],
+          [
+            351,
+            228
+          ],
+          [
+            338,
+            230
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A18",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            336,
+            153
+          ],
+          [
+            338,
+            182
+          ],
+          [
+            350,
+            178
+          ],
+          [
+            350,
+            153
+          ],
+          [
+            347,
+            127
+          ],
+          [
+            333,
+            127
+          ],
+          [
+            336,
+            153
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A19",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            6,
+            170
+          ],
+          [
+            133,
+            225
+          ],
+          [
+            138,
+            213
+          ],
+          [
+            12,
+            159
+          ],
+          [
+            7,
+            167
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A2",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            575,
+            56
+          ],
+          [
+            578,
+            362
+          ],
+          [
+            591,
+            357
+          ],
+          [
+            591,
+            59
+          ],
+          [
+            572,
+            59
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A20",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            1,
+            212
+          ],
+          [
+            71,
+            210
+          ],
+          [
+            70,
+            202
+          ],
+          [
+            0,
+            202
+          ],
+          [
+            0,
+            212
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A21",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            16,
+            167
+          ],
+          [
+            7,
+            190
+          ],
+          [
+            9,
+            209
+          ],
+          [
+            18,
+            206
+          ],
+          [
+            19,
+            190
+          ],
+          [
+            30,
+            173
+          ],
+          [
+            19,
+            169
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A22",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            102,
+            221
+          ],
+          [
+            123,
+            247
+          ],
+          [
+            175,
+            276
+          ],
+          [
+            247,
+            288
+          ],
+          [
+            308,
+            293
+          ],
+          [
+            308,
+            282
+          ],
+          [
+            236,
+            274
+          ],
+          [
+            181,
+            259
+          ],
+          [
+            135,
+            240
+          ],
+          [
+            108,
+            207
+          ],
+          [
+            105,
+            221
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A23",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            376,
+            295
+          ],
+          [
+            455,
+            286
+          ],
+          [
+            517,
+            271
+          ],
+          [
+            575,
+            236
+          ],
+          [
+            581,
+            228
+          ],
+          [
+            576,
+            221
+          ],
+          [
+            541,
+            249
+          ],
+          [
+            489,
+            267
+          ],
+          [
+            440,
+            274
+          ],
+          [
+            373,
+            283
+          ],
+          [
+            373,
+            292
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A3",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            645,
+            49
+          ],
+          [
+            508,
+            360
+          ],
+          [
+            523,
+            365
+          ],
+          [
+            658,
+            53
+          ],
+          [
+            645,
+            46
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A4",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            548,
+            194
+          ],
+          [
+            682,
+            252
+          ],
+          [
+            685,
+            245
+          ],
+          [
+            550,
+            184
+          ],
+          [
+            545,
+            197
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A5",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            674,
+            202
+          ],
+          [
+            673,
+            224
+          ],
+          [
+            665,
+            240
+          ],
+          [
+            674,
+            243
+          ],
+          [
+            686,
+            224
+          ],
+          [
+            689,
+            203
+          ],
+          [
+            677,
+            202
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A6",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            133,
+            209
+          ],
+          [
+            319,
+            209
+          ],
+          [
+            317,
+            200
+          ],
+          [
+            133,
+            203
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A8",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            366,
+            200
+          ],
+          [
+            365,
+            212
+          ],
+          [
+            548,
+            212
+          ],
+          [
+            550,
+            202
+          ],
+          [
+            368,
+            199
+          ]
+        ]
+      }
+    },
+    {
+      "id": "A9",
+      "type": "OrbitalArrow",
+      "attributes": {
+        "polygon": [
+          [
+            614,
+            199
+          ],
+          [
+            614,
+            210
+          ],
+          [
+            691,
+            209
+          ],
+          [
+            691,
+            200
+          ],
+          [
+            615,
+            200
+          ]
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "B0",
+      "to": "B1",
+      "type": "OrbitalConnection",
+      "via": "A0",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B0",
+      "to": "B3",
+      "type": "OrbitalConnection",
+      "via": "A22",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B0",
+      "to": "B2",
+      "type": "OrbitalConnection",
+      "via": "A6",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B1",
+      "to": "B4",
+      "type": "OrbitalConnection",
+      "via": "A1",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B1",
+      "to": "B2",
+      "type": "OrbitalConnection",
+      "via": "A18",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B2",
+      "to": "B3",
+      "type": "OrbitalConnection",
+      "via": "A17",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B2",
+      "to": "B4",
+      "type": "OrbitalConnection",
+      "via": "A8",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "B3",
+      "to": "B4",
+      "type": "OrbitalConnection",
+      "via": "A23",
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T10",
+      "to": "B4",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T11",
+      "to": "B3",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T12",
+      "to": "B3",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T14",
+      "to": "A4",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T15",
+      "to": "A3",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T2",
+      "to": "A2",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T3",
+      "to": "A3",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T4",
+      "to": "A19",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T5",
+      "to": "A20",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T6",
+      "to": "B0",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T7",
+      "to": "B1",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T8",
+      "to": "A8",
+      "type": "ArrowLabel",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    },
+    {
+      "from": "T9",
+      "to": "B4",
+      "type": "LabelAttachment",
+      "via": null,
+      "directed": false,
+      "constraints": {}
+    }
+  ],
+  "globals": {
+    "gravity": 9.81,
+    "has_friction": false,
+    "coordinate_system": "cartesian"
+  }
+}

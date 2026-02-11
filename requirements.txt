@@ -1,0 +1,7 @@
+# Minimal initial dependencies - add more per phase
+datasets==3.0.0             # Hugging Face datasets (e.g. ScienceQA)
+xmltodict==0.13.0           # Parse AI2D XML annotations
+pandas==2.2.3               # Data cleaning & splitting
+numpy==2.0.2
+scikit-learn>=1.7.0         # Train/val/test split
+pypdf2==3.0.1               # PDF text extraction (Phase 3 prep)
