@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "diagram_id": "demo_diagram",
+    "image_path": "/home/anshium/workspace/courses/alm/ALM/data/raw/ai2d/images/demo_diagram.png",
+    "source": "ai2d",
+    "domain": "mechanics",
+    "unit_system": "SI",
+    "pixel_to_meter_ratio": null
+  },
+  "globals": {
+    "gravity": {
+      "value": 9.81,
+      "vector": [
+        0,
+        1
+      ]
+    },
+    "medium": "air",
+    "simulation_type": "Dynamics"
+  },
+  "nodes": [
+    {
+      "id": "t1",
+      "role": "ANNOTATION",
+      "type": "Label",
+      "text": "10 kg mass",
+      "geometry": {
+        "type": "rectangle",
+        "vertices": [
+          [
+            160,
+            210
+          ],
+          [
+            240,
+            240
+          ]
+        ]
+      },
+      "physics_props": {
+        "value": 10.0,
+        "unit": "kg",
+        "parameter": "unknown",
+        "confidence": 0.8,
+        "raw_label": "10 kg mass"
+      }
+    },
+    {
+      "id": "t2",
+      "role": "ANNOTATION",
+      "type": "Label",
+      "text": "frictionless surface",
+      "geometry": {
+        "type": "rectangle",
+        "vertices": [
+          [
+            10,
+            260
+          ],
+          [
+            100,
+            280
+          ]
+        ]
+      },
+      "physics_props": null
+    },
+    {
+      "id": "b1",
+      "role": "BODY",
+      "type": "RigidBody",
+      "geometry": {
+        "type": "polygon",
+        "vertices": [
+          [
+            150,
+            200
+          ],
+          [
+            250,
+            200
+          ],
+          [
+            250,
+            250
+          ],
+          [
+            150,
+            250
+          ]
+        ]
+      },
+      "physics": {
+        "mass": {
+          "value": 1.0,
+          "unit": "kg",
+          "inferred_from": null
+        },
+        "material": {
+          "density": 1.0,
+          "friction": 0.3,
+          "restitution": 0.5
+        },
+        "behavior": "dynamic"
+      }
+    },
+    {
+      "id": "ground_1",
+      "role": "REFERENCE",
+      "type": "RigidBody",
+      "geometry": {
+        "type": "polygon",
+        "vertices": [
+          [
+            0,
+            250
+          ],
+          [
+            400,
+            250
+          ],
+          [
+            400,
+            300
+          ],
+          [
+            0,
+            300
+          ]
+        ]
+      },
+      "physics": {
+        "mass": {
+          "value": 1.0,
+          "unit": "kg",
+          "inferred_from": null
+        },
+        "material": {
+          "density": 1.0,
+          "friction": 0.3,
+          "restitution": 0.5
+        },
+        "behavior": "static"
+      }
+    }
+  ],
+  "edges": []
+}

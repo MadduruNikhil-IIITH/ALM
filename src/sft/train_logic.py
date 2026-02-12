@@ -17,10 +17,11 @@ from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTTrainer
 from datasets import load_dataset
 import wandb
+from src.config import LOGIC_MODEL_NAME, SCIENCEQA_TRAIN, SCIENCEQA_VAL
 
 
 # ────────────────────────────────────────────────────────────────
-# Placeholder Prompt (v1)
+# Placeholder Prompt (v1) - May need to change it later ....
 # ────────────────────────────────────────────────────────────────
 
 SYSTEM_PROMPT = """You are a precise middle-school / high-school physics reasoning assistant.
@@ -59,7 +60,7 @@ def format_example(example):
     )
 
     solution = example["solution"].strip()
-    if not solution.endswith("."):
+    if solution and not solution.endswith("."):
         solution += "."
 
     correct_choice_text = example["choices"][example["answer"]].strip()
@@ -74,7 +75,6 @@ def main():
     # ────────────────────────────────────────────────────────────────
     # Configuration
     # ────────────────────────────────────────────────────────────────
-    MODEL_NAME = "Qwen/Qwen2-1.5B-Instruct"
     OUTPUT_DIR = "output/logic_sft_qwen2-1.5b"
     MAX_SEQ_LENGTH = 1024
     NUM_EPOCHS = 3
@@ -87,9 +87,8 @@ def main():
     SAVE_STEPS = 400
     FP_DTYPE = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
 
-    DATA_DIR = Path("data/processed")
-    train_path = DATA_DIR / "scienceqa_physics_train.json"
-    val_path = DATA_DIR / "scienceqa_physics_val.json"
+    train_path = SCIENCEQA_TRAIN
+    val_path = SCIENCEQA_VAL
 
     if not train_path.exists() or not val_path.exists():
         raise FileNotFoundError(f"Missing split files:\n{train_path}\n{val_path}")
@@ -104,7 +103,7 @@ def main():
         project=wandb_project,
         name=wandb_run_name,
         config={
-            "model": MODEL_NAME,
+            "model": LOGIC_MODEL_NAME,
             "epochs": NUM_EPOCHS,
             "batch_size": BATCH_SIZE * GRAD_ACCUM,
             "learning_rate": LEARNING_RATE,
@@ -126,11 +125,11 @@ def main():
         bnb_4bit_use_double_quant=True,
     )
 
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+    tokenizer = AutoTokenizer.from_pretrained(LOGIC_MODEL_NAME)
     tokenizer.pad_token = tokenizer.eos_token
 
     model = AutoModelForCausalLM.from_pretrained(
-        MODEL_NAME,
+        LOGIC_MODEL_NAME,
         quantization_config=quantization_config,
         device_map="auto",
         dtype=FP_DTYPE,
@@ -169,7 +168,7 @@ def main():
     # Training Arguments with W&B enabled
     # ────────────────────────────────────────────────────────────────
     training_args = TrainingArguments(
-        output_dir=OUTPUT_DIR,
+        output_dir=str(CHECKPOINTS_DIR / "logic_sft"),
         num_train_epochs=NUM_EPOCHS,
         per_device_train_batch_size=BATCH_SIZE,
         per_device_eval_batch_size=BATCH_SIZE,
@@ -187,7 +186,7 @@ def main():
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
         greater_is_better=False,
-        report_to="wandb",                     # ← KEY CHANGE: enable W&B logging
+        report_to="wandb",
         save_total_limit=3,
         ddp_find_unused_parameters=False,
         gradient_checkpointing=True,
@@ -208,7 +207,7 @@ def main():
     trainer.train()
 
     # Save final adapter
-    final_save_path = Path(OUTPUT_DIR) / "final_adapter"
+    final_save_path = Path(CHECKPOINTS_DIR) / "logic_sft" / "final_adapter" # Adjusted path
     trainer.save_model(final_save_path)
     print(f"Training complete. Adapter saved to: {final_save_path}")
 

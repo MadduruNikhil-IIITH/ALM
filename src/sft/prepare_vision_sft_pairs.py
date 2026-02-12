@@ -15,15 +15,16 @@ for json_file in processed_dir.glob("*.json"):
     if not upg.get("nodes"):
         continue
     
-    img_path = upg.get("image_path")
-    if not Path(img_path).exists():
+    metadata = upg.get("metadata", {})
+    img_path = metadata.get("image_path")
+    if not img_path or not Path(img_path).exists():
         print(f"Missing image: {img_path}")
         continue
     
     pairs.append({
         "image_path": str(img_path),
         "upg_target": json.dumps(upg, ensure_ascii=False),  # stringified JSON
-        "diagram_id": upg["diagram_id"]
+        "diagram_id": metadata.get("diagram_id", "unknown")
     })
 
 print(f"Created {len(pairs)} training pairs")

@@ -1,40 +1,95 @@
 {
-  "description": "Placeholder / estimated UPG schema for development (Feb 2026). Update when Person 1 provides final version.",
-  "example_structure": {
-    "diagram_id": "string",
-    "image_path": "string (relative or absolute)",
-    "source": "ai2d | cghd | other",
+    "description": "Functional UPG schema for physics simulation (Level 2).",
+    "metadata": {
+        "diagram_id": "string",
+        "domain": "mechanics | electricity | astronomy",
+        "unit_system": "SI",
+        "pixel_to_meter_ratio": "float | null"
+    },
+    "globals": {
+        "gravity": {
+            "value": 9.81,
+            "vector": [
+                0,
+                1
+            ]
+        },
+        "medium": "air | water | vacuum",
+        "simulation_type": "Statics | Dynamics | Optics"
+    },
     "nodes": [
-      {
-        "id": "string (unique)",
-        "type": "Mass | Spring | Pulley | FixedPoint | ForceArrow | Text | Other",
-        "label": "string | null (visible text)",
-        "attributes": {
-          "position": ["float", "float"],
-          "bounding_box": ["x1", "y1", "x2", "y2"],
-          "mass": "float | null",
-          "stiffness": "float | null",
-          "force_magnitude": "float | null"
+        {
+            "id": "node_01",
+            "role": "BODY | ANNOTATION | SENSOR | REFERENCE",
+            "type": "RigidBody | Label | CurrentArrow | Ground | CoordinateAxis",
+            "geometry": {
+                "type": "polygon | rectangle | circle",
+                "vertices": "[[x,y], ...]",
+                "centroid": [
+                    0,
+                    0
+                ]
+            },
+            "physics": {
+                "mass": {
+                    "value": 5.0,
+                    "unit": "kg",
+                    "inferred_from": "text_node_05"
+                },
+                "initial_velocity": {
+                    "value": 0.0,
+                    "vector": [
+                        0,
+                        0
+                    ]
+                },
+                "material": {
+                    "density": 1.0,
+                    "friction": 0.3,
+                    "restitution": 0.5
+                },
+                "behavior": "static | dynamic | kinematic"
+            },
+            "physics_props": {
+                "value": 10.0,
+                "unit": "kg",
+                "parameter": "mass",
+                "confidence": 0.95,
+                "raw_label": "10kg"
+            },
+            "text": "string (for labels)",
+            "parent_id": "string (for grouping)"
         }
-      }
     ],
     "edges": [
-      {
-        "from": "string (node id)",
-        "to": "string (node id)",
-        "type": "Connected | AppliesForce | Supports | Tension | Other",
-        "directed": "true | false",
-        "constraints": {
-          "length_rest": "float | null",
-          "stiffness": "float | null",
-          "force_vector": "[float, float] | null"
+        {
+            "id": "edge_01",
+            "type": "CONSTRAINT | LINK | RELATIONSHIP",
+            "sub_type": "Spring | Weld | Pivot | Wire | LabelAttachment",
+            "connection": {
+                "source": {
+                    "node_id": "n1",
+                    "terminal": "positive | top | handle",
+                    "anchor": [
+                        0,
+                        0
+                    ]
+                },
+                "target": {
+                    "node_id": "n2",
+                    "terminal": "negative | bottom | base",
+                    "anchor": [
+                        10,
+                        10
+                    ]
+                }
+            },
+            "params": {
+                "stiffness": 100,
+                "damping": 0.1,
+                "directed": "bool"
+            },
+            "path": "[[x,y], ...]"
         }
-      }
-    ],
-    "globals": {
-      "gravity": 9.81,
-      "has_friction": "false | true | null",
-      "coordinate_system": "cartesian | null"
-    }
-  }
+    ]
 }

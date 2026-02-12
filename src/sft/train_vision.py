@@ -2,7 +2,7 @@
 Phase 1: Vision Model SFT (Image → UPG JSON)
 STABLE VERSION for RTX 4060 8GB + wandb logging with curves
 - Frequent logging for visible loss curves
-- Eval temporarily disabled to avoid token mismatch
+- Eval enabled
 - Processor truncation forced off
 """
 
@@ -15,12 +15,11 @@ from trl import SFTTrainer, SFTConfig
 from peft import LoraConfig, get_peft_model
 from PIL import Image
 import wandb
+from src.config import VISION_MODEL_NAME, VISION_PAIRS_FILE, CHECKPOINTS_DIR, MODELS_DIR
 
 # ────────────────────────────────────────────────
 # CONFIG
 # ────────────────────────────────────────────────
-MODEL_NAME = "Qwen/Qwen2-VL-2B-Instruct"
-
 LORA_RANK = 64
 LORA_ALPHA = 16
 LORA_DROPOUT = 0.05
@@ -31,31 +30,30 @@ GRAD_ACCUM = 8
 EPOCHS = 1
 LR = 5e-5
 
-PAIRS_FILE = Path("data/processed/ai2d_vision_sft_pairs.json")
-OUTPUT_DIR = Path("checkpoints/vision_sft_test")
-MODEL_SAVE_DIR = Path("models/vision_parser_sft_test")
+OUTPUT_DIR = CHECKPOINTS_DIR / "vision_sft"
+MODEL_SAVE_DIR = MODELS_DIR / "vision_sft"
 
 # ────────────────────────────────────────────────
-# Load data (small for testing)
+# Load data
 # ────────────────────────────────────────────────
 print("Loading pairs...")
-with open(PAIRS_FILE, "r", encoding="utf-8") as f:
+with open(VISION_PAIRS_FILE, "r", encoding="utf-8") as f:
     pairs = json.load(f)
 
-MIN_DATA = len(pairs)                               # Increase later
-pairs = pairs[:MIN_DATA]
+# Optional: Shuffle
+# import random; random.shuffle(pairs)
+
 print(f"Using {len(pairs)} examples")
 
 wandb.init(
     project="ALM",          # Your project name
-    name=f"vision_test_sft_ai2d_{MIN_DATA}ex",        # Run name
+    name=f"vision_test_sft_ai2d_{len(pairs)}ex",        # Run name
     config={                            # Optional: log hyperparameters
-        "model": MODEL_NAME,    
+        "model": VISION_MODEL_NAME,    
         "lora_rank": LORA_RANK,
         "batch_size": BATCH_SIZE * GRAD_ACCUM,
         "epochs": EPOCHS,
         "dataset_size": len(pairs),
-        "min_data": MIN_DATA,
     },
     # Optional: tags for filtering
     tags=["phase1", "vision-parser", "ai2d", "qwen2-vl-2b"]
@@ -76,14 +74,19 @@ dataset = Dataset.from_dict({
     "upg_target": [p["upg_target"] for p in pairs],
     "diagram_id": [p["diagram_id"] for p in pairs]
 })
-train_dataset = dataset.map(format_example, batched=False, remove_columns=dataset.column_names)
-print(f"Train examples: {len(train_dataset)}")  # No eval for now
+# Split dataset
+split = dataset.train_test_split(test_size=0.1, seed=42)
+train_dataset = split["train"].map(format_example, batched=False, remove_columns=dataset.column_names)
+eval_dataset = split["test"].map(format_example, batched=False, remove_columns=dataset.column_names)
+
+print(f"Train examples: {len(train_dataset)}")
+print(f"Eval examples: {len(eval_dataset)}")
 
 # ────────────────────────────────────────────────
 # Processor & Model
 # ────────────────────────────────────────────────
 print("Loading processor & model...")
-processor = AutoProcessor.from_pretrained(MODEL_NAME)
+processor = AutoProcessor.from_pretrained(VISION_MODEL_NAME)
 
 # Critical fix for mismatch: Force-disable truncation
 processor.tokenizer.truncation = False
@@ -96,7 +99,7 @@ processor.image_processor.size = {"shortest_edge": 224, "longest_edge": 896}
 processor.tokenizer.model_max_length = 65536  # Higher to give headroom
 
 model = Qwen2VLForConditionalGeneration.from_pretrained(
-    MODEL_NAME,
+    VISION_MODEL_NAME,
     torch_dtype=torch.bfloat16,
     device_map="auto",
     low_cpu_mem_usage=True
@@ -138,10 +141,10 @@ sft_config = SFTConfig(
     gradient_checkpointing=True,
     gradient_checkpointing_kwargs={"use_reentrant": False},
 
-    # Eval disabled temporarily to avoid mismatch
-    # eval_strategy="steps",
-    # eval_steps=1,
-    # do_eval=True,
+    # Eval enabled
+    eval_strategy="steps",
+    eval_steps=100,  # Adjust based on dataset size
+    do_eval=True,
 )
 
 # ────────────────────────────────────────────────
@@ -151,8 +154,9 @@ trainer = SFTTrainer(
     model=model,
     args=sft_config,
     train_dataset=train_dataset,
-    # eval_dataset=eval_dataset,  # ← Commented out
+    eval_dataset=eval_dataset,
     processing_class=processor,
+    max_seq_length=4096,
 )
 
 print("Starting SFT training on RTX 4060 8GB with wandb logging...")
