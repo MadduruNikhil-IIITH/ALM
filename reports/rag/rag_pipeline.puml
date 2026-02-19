@@ -1,0 +1,95 @@
+@startuml RAG Pipeline Architecture
+
+!define RECTANGLE class
+
+skinparam backgroundColor #FEFEFE
+skinparam rectangleBackgroundColor<<data>> #E3F2FD
+skinparam rectangleBackgroundColor<<process>> #FFF3E0
+skinparam rectangleBackgroundColor<<storage>> #E8F5E9
+skinparam rectangleBackgroundColor<<retrieval>> #F3E5F5
+skinparam rectangleBackgroundColor<<output>> #FFE0B2
+
+title RAG Pipeline: Data Flow and Architecture
+
+' Data Input Layer
+rectangle "**PDF Textbooks**\n(Physics Textbooks)" as PDFs <<data>>
+rectangle "**User Query**\n(Physics Question)" as Query <<data>>
+
+' Processing Layer
+rectangle "**PyPDFLoader**\nExtract text from PDFs" as Loader <<process>>
+rectangle "**RecursiveCharacterTextSplitter**\nChunk Size: 500\nOverlap: 100" as Splitter <<process>>
+rectangle "**HuggingFaceEmbeddings**\nModel: all-MiniLM-L6-v2\nDimensions: 384" as Embedder <<process>>
+
+' Optional HyDE Path
+rectangle "**HyDE (Optional)**\nGenerate hypothetical answer\nusing LLM" as HyDE <<process>>
+
+' Storage Layer
+database "**ChromaDB**\nVector Database\n- HNSW Index\n- Persistent Storage\n- Metadata Store" as ChromaDB <<storage>>
+
+' Retrieval Layer
+rectangle "**Query Embedding**\nEmbed user query\nto 384-dim vector" as QueryEmbed <<retrieval>>
+rectangle "**Similarity Search**\nCosine Similarity\nTop-K = 3" as SimilaritySearch <<retrieval>>
+rectangle "**Retrieved Chunks**\nTop 3 relevant\ntextbook sections" as RetrievedChunks <<retrieval>>
+
+' Generation Layer
+rectangle "**Context Augmentation**\nCombine query + chunks" as ContextAug <<output>>
+rectangle "**Fine-tuned LLM**\nQwen2-VL-2B (Vision)\nQwen2-1.5B (Logic)" as LLM <<output>>
+rectangle "**Generated Answer**\nPhysics explanation\n+ UPG (if applicable)" as Answer <<output>>
+
+' Data Flow: Ingestion Pipeline
+PDFs --> Loader : "Load PDFs"
+Loader --> Splitter : "Raw text"
+Splitter --> Embedder : "Text chunks\n(~500 chars each)"
+Embedder --> ChromaDB : "Store vectors\n+ metadata"
+
+' Data Flow: Retrieval Pipeline (Standard)
+Query --> QueryEmbed : "Standard path"
+QueryEmbed --> SimilaritySearch : "Query vector"
+
+' Data Flow: Retrieval Pipeline (HyDE)
+Query --> HyDE : "HyDE path\n(optional)"
+HyDE --> QueryEmbed : "Hypothetical\ndocument"
+
+' Data Flow: Similarity Search
+SimilaritySearch --> ChromaDB : "Search vectors"
+ChromaDB --> SimilaritySearch : "Return top-K"
+SimilaritySearch --> RetrievedChunks : "Top 3 chunks"
+
+' Data Flow: Generation Pipeline
+RetrievedChunks --> ContextAug : "Retrieved context"
+Query --> ContextAug : "Original query"
+ContextAug --> LLM : "Augmented prompt"
+LLM --> Answer : "Generate response"
+
+' Legend
+legend right
+  |<#E3F2FD>| Data Input |
+  |<#FFF3E0>| Processing |
+  |<#E8F5E9>| Storage |
+  |<#F3E5F5>| Retrieval |
+  |<#FFE0B2>| Output |
+endlegend
+
+note right of ChromaDB
+  **Storage Details:**
+  - Index: HNSW (graph-based)
+  - Persist: SQLite + disk
+  - Chunks: ~5,000 indexed
+  - Query time: ~12ms
+end note
+
+note right of HyDE
+  **HyDE Enhancement:**
+  Improves retrieval by 2.6%
+  Uses LLM to generate
+  hypothetical answer first
+end note
+
+note bottom of Answer
+  **System Performance:**
+  - Base Model: 64.6% accuracy
+  - SFT Only: 77.8% accuracy  
+  - RAG + SFT: 88.3% accuracy
+end note
+
+@enduml

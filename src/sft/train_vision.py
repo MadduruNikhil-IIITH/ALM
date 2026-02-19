@@ -145,6 +145,7 @@ sft_config = SFTConfig(
     eval_strategy="steps",
     eval_steps=100,  # Adjust based on dataset size
     do_eval=True,
+    max_seq_length=4096,
 )
 
 # ────────────────────────────────────────────────
@@ -156,7 +157,6 @@ trainer = SFTTrainer(
     train_dataset=train_dataset,
     eval_dataset=eval_dataset,
     processing_class=processor,
-    max_seq_length=4096,
 )
 
 print("Starting SFT training on RTX 4060 8GB with wandb logging...")
